@@ -47,7 +47,7 @@ RUN sed -ri 's/root\:\*/root\:\$1\$xampp\$5\/7SXMYAMmS68bAy94B5f\./g' /etc/shado
 RUN apt-get -y install nano vim less --no-install-recommends
 
 RUN apt-get clean
-VOLUME [ "/var/log/mysql/", "/var/log/apache2/" ]
+VOLUME [ "/var/log/mysql/", "/var/log/apache2/", "/www" ]
 
 EXPOSE 3306
 EXPOSE 2222
