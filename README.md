@@ -26,7 +26,7 @@ Pagina inicial de XAMPP: [http://localhost/](http://localhost/)
 
 
 
-### ssh connection
+### ssh
 
 El password por default es 'root'.
 
@@ -40,7 +40,7 @@ docker exec -ti http bash
 ```
 
 
-### Use your own configuration
+### Cambiar configuracion 
 
 En el directorio de my_apache_conf se encuentran los los archivos de configuración
 
