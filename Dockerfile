@@ -50,7 +50,7 @@ RUN apt-get clean
 VOLUME [ "/var/log/mysql/", "/var/log/apache2/" ]
 
 EXPOSE 3306
-EXPOSE 22
+EXPOSE 2222
 EXPOSE 80
 
 # write a startup script
