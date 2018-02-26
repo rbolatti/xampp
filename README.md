@@ -6,7 +6,7 @@ This image is intended for PHP+MySQL development. For convenience, it also runs 
 This image uses /www directory for your page files, so you need to mount it.
 
 ```
-docker run --name myXampp -p 2222:22 -p 80:80 -d -v ~/my_web_pages:/www tomsik68/xampp
+docker run --name http -p 2222:22 -p 80:80 -d -v ~/my_web_pages:/www rbolatti/xampp
 ```
 The command above will expose the SSH server on port 41061 and HTTP server on port 41062.    
 Feel free to use your own name for the container...
@@ -50,5 +50,5 @@ docker run --name xampp -p 2222:22 -p 80:80 -d -v ~/my_web_pages:/www  -v ~/my_a
 
 Once you have modified configuration for example
 ```
-docker exec myXampp /opt/lampp/lampp restart
+docker exec http /opt/lampp/lampp restart
 ```
